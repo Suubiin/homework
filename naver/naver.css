@@ -1,0 +1,167 @@
+/* 데스크탑 스타일 */
+@media (min-width: 768px){
+
+}
+
+/* 모바일 환경에서 IP보안 ON/OFF 스위치 보이지 않도록 함 */
+@media (max-width: 768px){
+  .form-checkbox-ip {
+    display: none;
+  }
+}
+
+/* 기본 스타일 */
+body {
+  font-size: 16px;
+  color: #181818;
+}
+
+/* 로고 이미지 */
+.logo-image {
+  text-align: center;
+
+  img{
+    /* background: pink; */
+    width: 230px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+
+/* 로그인 폼 */
+.login-form {
+  box-sizing: border-box;
+  width: 100%;
+
+  fieldset{
+    border: none;
+    margin: 0 20px;
+    padding: 0;
+  }
+  legend{
+    position: absolute;
+    left: -999em;
+  }
+}
+
+
+.form-input {
+  margin-right: 20px;
+  
+  /* 아이디/비밀번호 라벨 hidden*/
+  label{
+    visibility: hidden;
+  }
+
+  /* 입력 필드 */
+  #userEmail, #userPwd {
+    width: 100%;
+    font-size: 14px;
+    height: 45px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    padding-left: 1rem;
+    
+    &:focus {
+      outline-color: #03cf5d;
+      background-color: #e9f0fd;
+    }
+  }
+}
+
+
+/* 로그인 버튼 */
+.login-button {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  background-color: #03cf5d;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.container{
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; 
+  padding-inline: 20px;
+  margin-top: 10px;
+}
+
+
+.form-checkbox{
+  position: relative;
+
+  input{
+    position: absolute;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+  }
+
+  label{
+    background: url(./icons/unchecked.svg) no-repeat 0 0 /contain;
+    padding-left: 25px;
+  }
+
+  input:checked + label{
+    background-image: url(./icons/checked.svg);
+  }
+
+  input:focus{
+    outline: none;
+  }
+
+  input:focus-visible{
+    outline: 1px solid #181818;
+  }
+}
+
+.security-container{
+  display: flex;
+  flex-flow: row nowrap;
+
+  a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #181818;
+    margin-right: 0.3rem;
+  }
+}
+
+.form-checkbox-ip{
+  input{
+    position: absolute;
+    appearance: none;
+  }
+
+  /* 체크박스가 선택된 경우 */
+  #ip_security_checkbox:checked + label::before {
+    content: "ON";
+  }
+  /* 체크박스가 선택되지 않은 경우 */
+  #ip_security_checkbox + label::before {
+    content: "OFF";
+  }
+
+  /* label 텍스트 숨기기 */
+  label {
+    font-size: 0;
+  }
+
+  label::before {
+    font-size: 16px; 
+  }
+
+  /* #ip_security_checkbox:focus{
+    outline: 1px solid #181818;
+  } */
+}
+
+
