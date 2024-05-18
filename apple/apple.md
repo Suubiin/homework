@@ -77,7 +77,7 @@ small screen일 때와 large screen일 때의 글자 크기, 위쪽 여백을 �
       }
     }
 마크업할 때 small screen 기준으로 줄바꿈이 되는 곳에 
-    <span class="line-break"><br></span> 
+      <span class="line-break"><br></span> 
 을 추가하였다. 그리고 large screen이 될 때 display: none;을 하여 줄바꿈이 되지 않도록 하였다.
 
 ## h1, h2의 글자색
