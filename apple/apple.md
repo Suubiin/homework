@@ -21,17 +21,16 @@
 
 ### 스타일링
 ## 배경 이미지
-
-  .ipad-pro{
-    background-image: image-set(url(./../products/ipad_pro.jpeg) 1x, 
-                                url(./../products/ipad_pro_2x.jpeg) 2x);
-  }
-  @media (min-width: 1024px){
     .ipad-pro{
-      background-image: image-set(url(./../products/ipad_pro_wide.jpeg) 1x, 
-                                  url(./../products/ipad_pro_wide_2x.jpeg) 2x);
+      background-image: image-set(url(./../products/ipad_pro.jpeg) 1x, 
+                                  url(./../products/ipad_pro_2x.jpeg) 2x);
     }
-  }
+    @media (min-width: 1024px){
+      .ipad-pro{
+        background-image: image-set(url(./../products/ipad_pro_wide.jpeg) 1x, 
+                                    url(./../products/ipad_pro_wide_2x.jpeg) 2x);
+      }
+    }
 
 기본적으로 small screen 이미지를 이미지셋으로 지정하였고, 미디어쿼리를 사용하여 large screen 이미지를 이미지셋으로 지정하였다.
 
