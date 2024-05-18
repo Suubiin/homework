@@ -2,20 +2,20 @@
 ![apple과제 (1)](https://github.com/Suubiin/homework/assets/127467411/e3aaac7c-6178-4876-90b2-628fda84e322)
 
 ### 마크업
-<!-- ipad-pro -->
-  <div class="card ipad-pro">
-    <h1>iPad Pro</h1>
-    <h2>
-      놀라우리만치 얇다.
-      <span class="line-break"><br></span>
-      엄청나게 강력하다.
-    </h2>
-    <p>출시일 추후 공개</p>
-    <ul>
-      <li class="more-data"><a href="/">더 알아보기</a></li>
-      <li class="price"><a href="/">가격 보기</a></li>
-    </ul>
-  </div>
+  <!-- ipad-pro -->
+    <div class="card ipad-pro">
+      <h1>iPad Pro</h1>
+      <h2>
+        놀라우리만치 얇다.
+        <span class="line-break"><br></span>
+        엄청나게 강력하다.
+      </h2>
+      <p>출시일 추후 공개</p>
+      <ul>
+        <li class="more-data"><a href="/">더 알아보기</a></li>
+        <li class="price"><a href="/">가격 보기</a></li>
+      </ul>
+    </div>
 
 카드 각각을 위와 같은 구조로 마크업하였고, 7개의 카드를 .container 라는 클래스명을 가진 div로 감쌌다.
 
