@@ -1,0 +1,177 @@
+@import url(./base.css);
+@import url(./reset.css);
+@import url(./theme.css);
+
+/* 카드 컴포넌트 */
+.card{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: var(--size);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: max-content;
+  justify-items: center;
+  gap: var(--small-spacing);
+}
+
+.ipad-pro{
+  background-image: image-set(url(./../products/ipad_pro.jpeg) 1x, 
+                              url(./../products/ipad_pro_2x.jpeg) 2x);
+}
+.ipad-air{
+  background-image: image-set(url(./../products/ipad_air.jpeg) 1x, 
+                              url(./../products/ipad_air_2x.jpeg) 2x);
+}
+.iphone15-pro{
+  background-image: image-set(url(./../products/iphone15_pro.jpeg) 1x, 
+                              url(./../products/iphone15_pro_2x.jpeg) 2x);
+}
+.iphone15{
+  background-image: image-set(url(./../products/iphone15.jpeg) 1x, 
+                              url(./../products/iphone15_2x.jpeg) 2x);
+}
+.watch{
+  background-image: image-set(url(./../products/apple_watch.jpeg) 1x, 
+                              url(./../products/apple_watch_2x.jpeg) 2x);
+}
+.macbook-air{
+  background-image: image-set(url(./../products/macbook_air.jpeg) 1x, 
+                              url(./../products/macbook_air_2x.jpeg) 2x);
+}
+.airpods-pro{
+  background-image: image-set(url(./../products/airpods_pro.jpeg) 1x, 
+                              url(./../products/airpods_pro_2x.jpeg) 2x);
+}
+
+@media (min-width: 1024px){
+  .ipad-pro{
+    background-image: image-set(url(./../products/ipad_pro_wide.jpeg) 1x, 
+                                url(./../products/ipad_pro_wide_2x.jpeg) 2x);
+  }
+  .ipad-air{
+    background-image: image-set(url(./../products/ipad_air_wide.jpeg) 1x, 
+                                url(./../products/ipad_air_wide_2x.jpeg) 2x);
+  }
+  .iphone15-pro{
+    background-image: image-set(url(./../products/iphone15_pro_wide.jpeg) 1x, 
+                                url(./../products/iphone15_pro_wide_2x.jpeg) 2x);
+  }
+}
+
+h1{
+  font-size: var(--large-text);
+  margin-top: var(--large-spacing);
+  font-weight: bold;
+  
+  @media (min-width: 1024px){
+    font-size: var(--extra-large-text);
+    margin-top: var(--extra-large-spacing);
+  }
+}
+
+
+h2 {
+  font-size: var(--base-text);
+  line-height: var(--line-normal);
+  text-align: center;
+  
+  @media (min-width: 1024px) {
+    font-size: var(--medium-text);
+    
+    .line-break{
+      display: none;
+    }
+  }
+}
+
+.card:nth-child(even) h1, .card:nth-child(even) h2{
+  color: var(--black);
+}
+
+.card:nth-child(odd) h1, .card:nth-child(odd) h2{
+  color: var(--white);
+}
+
+p{
+  font-size: var(--small-text);
+  color: var(--gray);
+}
+
+ul{
+  display: flex;
+  flex-flow: row nowrap;
+  color: var(--white);
+  font-size: var(--xx-small-text);
+
+  @media (min-width: 1024px){
+    font-size: var(--x-small-text);
+  }
+}
+
+li{
+  border-radius: 50px;
+  padding: var(--x-small-spacing) var(--small-spacing);
+}
+
+.more-data{
+  border: 1px solid var(--blue-400);
+  background-color: var(--blue-400);
+  
+  &:hover{
+    background-color: var(--blue-200);
+    border-color: var(--blue-200);
+  }
+}
+
+.card:nth-child(even) .more-data {
+  background-color: var(--black);
+  border-color: var(--black);
+}
+
+.price{
+  color: var(--blue-400);
+  border: 1px solid var(--blue-400);
+  margin-left: var(--base-spacing);
+
+  &:hover{
+    background-color: var(--blue-200);
+    border-color: var(--blue-200);
+    color: var(--white);
+  }
+}
+
+.card:nth-child(even) .price {
+  border-color: var(--black);
+  color: var(--black);
+
+  &:hover{
+    background-color: var(--black);
+    color: var(--white)
+  }
+}
+
+/* 카드 레이아웃 */
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  gap: var(--base-spacing);
+
+  @media (min-width: 1024px){
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+
+    .ipad-pro{
+      grid-area: 1/1/2/3;
+    }
+  
+    .ipad-air{
+      grid-area: 2/1/3/3;
+    }
+  
+    .iphone15-pro{
+      grid-area: 3/1/4/3;
+    }
+  }
+}
