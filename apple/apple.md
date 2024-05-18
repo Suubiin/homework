@@ -1,5 +1,5 @@
 ### 구현 결과
-![apple과제](https://github.com/Suubiin/homework/assets/127467411/50ab63c1-b675-4bbb-8bb6-e8a3255514aa)
+![apple과제 (1)](https://github.com/Suubiin/homework/assets/127467411/e3aaac7c-6178-4876-90b2-628fda84e322)
 
 ### 마크업
 <!-- ipad-pro -->
