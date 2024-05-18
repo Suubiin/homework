@@ -1,7 +1,7 @@
-### 구현 결과
+# 구현 결과
 ![apple과제 (1)](https://github.com/Suubiin/homework/assets/127467411/e3aaac7c-6178-4876-90b2-628fda84e322)
 
-### 마크업
+# 마크업
   <!-- ipad-pro -->
     <div class="card ipad-pro">
       <h1>iPad Pro</h1>
@@ -19,7 +19,7 @@
 
 카드 각각을 위와 같은 구조로 마크업하였고, 7개의 카드를 .container 라는 클래스명을 가진 div로 감쌌다.
 
-### 스타일링
+# 스타일링
 ## 배경 이미지
     .ipad-pro{
       background-image: image-set(url(./../products/ipad_pro.jpeg) 1x, 
