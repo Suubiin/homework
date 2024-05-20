@@ -3,11 +3,14 @@ h1, h2, h3, h4, h5, h6{
   font: inherit;
   font-size: 1em;
   margin: 0;
+  line-height: 1;
+  line
 }
 
 a{
   color: inherit;
   text-decoration: none;
+  line-height: 1;
 }
 
 ul, ol{
@@ -15,6 +18,7 @@ ul, ol{
   padding-left: 0;
   padding-inline-start: 0;
   margin: 0;
+  line-height: 1;
 }
 
 fieldset{
@@ -25,8 +29,10 @@ fieldset{
 
 p, figure{
   margin: 0;
+  line-height: 1;
 }
 
 input, textarea, select, option, button{
   font: inherit;
+  line-height: 1;
 }

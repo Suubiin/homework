@@ -73,9 +73,12 @@ h1{
 
 h2 {
   font-size: var(--base-text);
-  line-height: var(--line-normal);
   text-align: center;
-  
+
+  @media (max-width: 1024px) {
+    line-height: var(--line-normal);
+  }
+
   @media (min-width: 1024px) {
     font-size: var(--medium-text);
     
